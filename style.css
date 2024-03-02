@@ -87,6 +87,28 @@ section{
     border: 1px solid #444;
 }
 
+.hero {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    color: #b0b8c4;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+.hello {
+    font-weight: bold;
+}
+
+.name {
+    color: #70ff00;
+}
+
 /* aside */
 #projects{
     min-height: 100%;
