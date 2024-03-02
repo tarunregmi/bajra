@@ -28,46 +28,46 @@ const cards = [
 ];
 
 function project(obj) {
-  const li = document.createElement("li");
-  li.classList = "project visible";
-  const card = document.createElement("div");
-  card.classList = "card";
+    const li = document.createElement("li");
+    li.classList = "project visible";
+    const card = document.createElement("div");
+    card.classList = "card";
 
-  const thumbnail = document.createElement("img");
-  thumbnail.src = `./assets/img/${obj.thumbnail}`;
-  thumbnail.alt = obj.title;
-  thumbnail.classList = "thumbnail";
+    const thumbnail = document.createElement("img");
+    thumbnail.src = `./assets/img/${obj.thumbnail}`;
+    thumbnail.alt = obj.title;
+    thumbnail.classList = "thumbnail";
 
-  const description = document.createElement("div");
-  description.classList = "description";
-  const h3 = document.createElement("h3")
-  h3.textContent = obj.title;
-  const p = document.createElement("p");
-  p.textContent = obj.description;
-  description.appendChild(h3);
-  description.append(p);
+    const description = document.createElement("div");
+    description.classList = "description";
+    const h3 = document.createElement("h3")
+    h3.textContent = obj.title;
+    const p = document.createElement("p");
+    p.textContent = obj.description;
+    description.appendChild(h3);
+    description.append(p);
 
-  const actions = document.createElement("div");
-  actions.classList = "actions";
-  const ap = document.createElement("a");
-  ap.classList = "action-btn";
-  ap.href = `/${obj.previewLink}`;
-  ap.target = "_blank";
-  ap.textContent = "Preview";
-  const as = document.createElement("a");
-  as.classList = "action-btn";
-  as.href = `/${obj.sourceLink}`;
-  as.target = "_blank";
-  as.textContent = "Source Code";
-  actions.appendChild(ap);
-  actions.appendChild(as);
+    const actions = document.createElement("div");
+    actions.classList = "actions";
+    const ap = document.createElement("a");
+    ap.classList = "action-btn";
+    ap.href = `/${obj.previewLink}`;
+    ap.target = "_blank";
+    ap.textContent = "Preview";
+    const as = document.createElement("a");
+    as.classList = "action-btn";
+    as.href = `/${obj.sourceLink}`;
+    as.target = "_blank";
+    as.textContent = "Source Code";
+    actions.appendChild(ap);
+    actions.appendChild(as);
 
-  card.appendChild(thumbnail);
-  card.appendChild(description);
-  card.appendChild(actions);
+    card.appendChild(thumbnail);
+    card.appendChild(description);
+    card.appendChild(actions);
 
-  li.appendChild(card);
-  projects.appendChild(li);
+    li.appendChild(card);
+    projects.appendChild(li);
 }
 
 window.addEventListener("load", () => {
