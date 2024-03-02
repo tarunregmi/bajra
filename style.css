@@ -127,8 +127,6 @@ section{
     filter: drop-shadow(7px 7px #000);
     gap: 5px;
     opacity: .2;
-    display: flex;
-    flex-flow: column nowrap;
     transition: all 1s cubic-bezier(0.37, 0.94, 0.48, 1.51);
     transform: translateY(-30px) rotateY(45deg);
 }
@@ -136,18 +134,40 @@ section{
 .project.visible .card:hover{
     transition-duration: .3s;
     transform-origin: bottom left;
-    transform: translateY(0) rotateZ(-3deg) !important;
+    transform: translateY(0) rotateZ(-1deg) !important;
 }
 
 .project.visible .card{
     opacity: 1;
-    cursor: pointer;
     pointer-events: initial;
     transform: translateY(0) rotateY(0) !important;
 }
 
 .card img{
     border-radius: inherit;
+}
+
+.description p {
+    color: #ffffffb3;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    flex-flow: row;
+}
+
+.action-btn {
+    padding: 5px 12px;
+    border-radius: 5px;
+    border: 1px solid #90caf980;
+    transition: all .3s ease;
+}
+
+.action-btn:hover {
+    border-color: #65baff;
+    background-color: rgb(144 202 249 / .08);
 }
 
 /* .project:not(.visible) .card{
