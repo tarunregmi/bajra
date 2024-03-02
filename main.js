@@ -51,11 +51,13 @@ function project(obj) {
   actions.classList = "actions";
   const ap = document.createElement("a");
   ap.classList = "action-btn";
-  ap.href = obj.previewLink;
+  ap.href = `/${obj.previewLink}`;
+  ap.target = "_blank";
   ap.textContent = "Preview";
   const as = document.createElement("a");
   as.classList = "action-btn";
-  as.href = obj.sourceLink;
+  as.href = `/${obj.sourceLink}`;
+  as.target = "_blank";
   as.textContent = "Source Code";
   actions.appendChild(ap);
   actions.appendChild(as);
