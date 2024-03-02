@@ -8,22 +8,19 @@ const cards = [
         thumbnail: 'scr_bug_on_a_wire.png',
         title: 'Bug On A Wire',
         description: 'Online bug on a game usign HTML, CSS and JavaScript.',
-        previewLink: 'bug_on_a_wire',
-        sourceLink: ''
+        onlineLink: 'bug_on_a_wire'
     },
     {
         thumbnail: 'scr_figma_to_web.png',
         title: 'Figma To WEB',
         description: 'Conversion of given figma design into a real website using HTML and CSS.',
-        previewLink: 'figma_to_web',
-        sourceLink: ''
+        onlineLink: 'figma_to_web'
     },
     {
         thumbnail: 'scr_addressbook.png',
         title: 'Addressbook',
         description: 'Address shell scripting',
-        previewLink: '',
-        sourceLink: ''
+        onlineLink: ''
     },
 ];
 
@@ -51,12 +48,12 @@ function project(obj) {
     actions.classList = "actions";
     const ap = document.createElement("a");
     ap.classList = "action-btn";
-    ap.href = `/${obj.previewLink}`;
+    ap.href = `/${obj.onlineLink}`;
     ap.target = "_blank";
     ap.textContent = "Preview";
     const as = document.createElement("a");
     as.classList = "action-btn";
-    as.href = `/${obj.sourceLink}`;
+    as.href = `https://git.bajratechnologies.com/tarunregmi/${obj.onlineLink}`;
     as.target = "_blank";
     as.textContent = "Source Code";
     actions.appendChild(ap);
