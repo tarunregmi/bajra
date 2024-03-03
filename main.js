@@ -5,6 +5,12 @@ const projects = document.getElementById("projects");
 
 const cards = [
     {
+        thumbnail: 'scr_todo.png',
+        title: 'Angular ToDo App',
+        description: 'Simple todo app using Angular.',
+        onlineLink: 'todo'
+    },
+    {
         thumbnail: 'scr_bug_on_a_wire.png',
         title: 'Bug On A Wire',
         description: 'Online bug on a game usign HTML, CSS and JavaScript.',
